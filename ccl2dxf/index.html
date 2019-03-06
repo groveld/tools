@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ccl2dxf</title>
+    <style>
+      textarea:focus,
+      input:focus,
+      button:focus {
+        border: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container" style="max-width: 500px;">
+      <h1 class="text-center mb-3">Converting Coordinates</h1>
+      <form name="ccl2dxf">
+        <div class="form-group">
+          <textarea class="form-control" name="coord" rows="7" placeholder="Paste coordinate array here" autofocus></textarea>
+          <input class="form-control" type="text" name="status" readonly>
+        </div>
+        <div class="form-group">
+          <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons">
+            <label class="btn btn-secondary"><input type="radio" name="filetype" value="html">HTML</label>
+            <label class="btn btn-secondary active"><input type="radio" name="filetype" value="dxf" checked>DXF</label>
+            <label class="btn btn-secondary"><input type="radio" name="filetype" value="svg">SVG</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="btn-group btn-block" role="group" aria-label="Basic example">
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="button" class="btn btn-success" onclick="convert(this.form.name)">Convert</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="ccl2dxf.js"></script>
+  </body>
+</html>
