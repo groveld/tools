@@ -1,0 +1,11 @@
+textarea:focus,
+input:focus,
+button:focus {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
