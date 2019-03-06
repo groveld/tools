@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Upload/Download Calculator</title>
+  <title>Calculate Your Optimal BitTorrent Settings</title>
 </head>
 <body onload="calculate()">
-  <h1>Calculate Your Optimal Torrent Settings</h1>
+  <h1>Calculate Your Optimal BitTorrent Settings</h1>
 
-  <input id="download" type="number" min="0" step="1" placeholder="Download" value="500" oninput="calculate()">
-  <input id="upload" type="number" min="0" step="1" placeholder="Upload" value="50" oninput="calculate()">
+  <input id="download" type="number" min="0" step="1" placeholder="Download" value="0" oninput="calculate()">
+  <input id="upload" type="number" min="0" step="1" placeholder="Upload" value="0" oninput="calculate()">
   <select id="modifier" oninput="calculate()">
     <option value="0.125">Kbps</option>
     <option value="125" selected="selected">Mbps</option>
