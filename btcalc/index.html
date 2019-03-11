@@ -7,8 +7,8 @@
 <body onload="calculate()">
   <h1>Calculate Your Optimal BitTorrent Settings</h1>
 
-  <input id="download" type="number" min="0" step="1" placeholder="Download" value="0" oninput="calculate()">
-  <input id="upload" type="number" min="0" step="1" placeholder="Upload" value="0" oninput="calculate()">
+  <input id="download" type="number" min="0" step="1" placeholder="Download" value="" oninput="calculate()">
+  <input id="upload" type="number" min="0" step="1" placeholder="Upload" value="" oninput="calculate()">
   <select id="modifier" oninput="calculate()">
     <option value="0.125">Kbps</option>
     <option value="125" selected="selected">Mbps</option>
